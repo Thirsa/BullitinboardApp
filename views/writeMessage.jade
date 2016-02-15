@@ -1,19 +1,13 @@
 doctype html
 html
 	head
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
-		script(type="text/javascript").
-			$(document).ready(function(){
-			});		
-		body
-			a(href='/viewMessage') See your message
-			h2 Write your message on this page
-			form(name="login", action="/", method="post")
-				br
-				input(id="inputs" type="text", name="titles", placeholder="Title", autocomplete="off")
-				br
-				input(id="inputs" type="text", name="messages", placeholder="Message", autocomplete="off")
-				br
-				input(id="input2" type="submit",value="Submit")
-			ul
-				li= result
+	body
+		a(href='/viewMessage') See your message
+		h2 Write your message on this page
+		form(name="login", action="/", method="post")
+			br
+			input(id="inputs" type="text", name="titles", placeholder="Title", autocomplete="off")
+			br
+			input(id="inputs" type="text", name="messages", placeholder="Message", autocomplete="off")
+			br
+			input(id="input2" type="submit",value="Submit")
