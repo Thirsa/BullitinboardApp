@@ -4,6 +4,7 @@ html
 	body
 		a(href='/writeMessage') Write your message
 		h2 These are all the messages
+		h2 #{messageInfo}
 		-each message in messageInfo
 			form(name="login", action="/viewMessage", method="get")
 			br 
